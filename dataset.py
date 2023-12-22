@@ -2,7 +2,6 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, sum, round
 
 spark = SparkSession.builder.appName("DistribuiraniSistemi").master("spark://192.168.137.1:7077").getOrCreate()
-spark.sparkContext.setLogLevel("OFF")
 
 path = "kupovina.csv"
 
